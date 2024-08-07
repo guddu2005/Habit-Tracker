@@ -55,11 +55,11 @@ export default function AddHabit() {
 
     return (
         <div>
-            <h2 className='mx-20 mt-5 text-3xl'>Add Habit</h2>
-            <form onSubmit={handleAdd} className='mx-20 text-lg'>
+            <h2 className='md:mx-20 mt-5 text-3xl mx-5'>Add Habit</h2>
+            <form onSubmit={handleAdd} className='md:mx-20 mx-5 text-lg'>
                 <p className='mt-3 mb-2'>Habit</p>
                 <input
-                    className='w-96 h-10 border border-blue-200 text-sm p-2'
+                    className='md:w-96 w-80 h-10 border border-blue-200 text-sm p-2'
                     placeholder='Enter Habit'
                     type="text"
                     value={habit}
@@ -68,7 +68,7 @@ export default function AddHabit() {
                 />
                 <p className='mt-4 mb-2'>Description</p>
                 <input
-                    className='w-96 h-10 border border-blue-200 text-sm p-2'
+                    className='md:w-96 w-80 h-10 border border-blue-200 text-sm p-2'
                     placeholder='Enter Description'
                     type="text"
                     value={desc}
@@ -81,22 +81,22 @@ export default function AddHabit() {
                 </p>
             </form>
             <hr className='border-blue-200 mt-10 mb-1 mx-20' />
-            <table className="table-auto w-screen mt-6  ">
-                <thead className='border border-lime-400 shadow-md '>
-                    <tr>
-                        <th className="px-4 py-2">Index</th>
-                        <th className="px-4 py-2">Habit</th>
-                        <th className="px-4 py-2">Description</th>
-                        <th className="px-4 py-2">Actions</th>
+            <table className="table-auto w-96 md:w-screen mt-6 px-1 ">
+                <thead className='border border-lime-400 shadow-md  '>
+                    <tr className=''>
+                        <th className="md:px-4 py-2">Index</th>
+                        <th className="md:px-4 py-2">Habit</th>
+                        <th className="md:px-4 py-2">Description</th>
+                        <th className="md:px-4 py-2">Actions</th>
                     </tr>
                 </thead>
                 <tbody className='border border-lime-400 shadow-md'>
                     {habitList.map((task, index) => (
                         <tr key={index} className='border border-lime-400 shadow-md'>
-                            <td className="px-5 py-2 text-center">{index + 1}</td>
-                            <td className="px-4 py-2 text-center">{task.name}</td>
-                            <td className="px-4 py-2 text-center">{task.desc}</td>
-                            <td className="px-4 py-2 flex space-x-2 justify-center">
+                            <td className="md:px-5 md:py-2 text-center">{index + 1}</td>
+                            <td className="md:px-4 md:py-2 text-center">{task.name}</td>
+                            <td className="md:px-4 md:py-2 text-center">{task.desc}</td>
+                            <td className="md:px-4 md:py-2 flex space-x-2 justify-center">
                                 <button
                                     className="bg-yellow-500 h-10 w-10 text-white py-1 px-3 rounded"
                                 onClick={() => editHabit(index)}
