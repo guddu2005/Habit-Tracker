@@ -54,7 +54,7 @@ export default function AddHabit() {
 
 
     return (
-        <div>
+        <div className=''>
             <h2 className='md:mx-20 mt-5 text-3xl mx-5'>Add Habit</h2>
             <form onSubmit={handleAdd} className='md:mx-20 mx-5 text-lg'>
                 <p className='mt-3 mb-2'>Habit</p>
@@ -75,13 +75,13 @@ export default function AddHabit() {
                     onChange={(e) => setDesc(e.target.value)}
                 />
                 <p className='mt-2'>
-                    <Button variant='contained' color='success' type='submit'>
+                    <Button variant='contained' className='bg-blue-600' type='submit'>
                         {isText ? 'Save' : 'Add'}
                     </Button>
                 </p>
             </form>
             <hr className='border-blue-200 mt-10 mb-1 mx-20' />
-            <table className="table-auto w-96 md:w-screen mt-6 px-1 ">
+            <table className="table-auto w-screen md:w-screen mt-6 px-1 ">
                 <thead className='border border-lime-400 shadow-md  '>
                     <tr className=''>
                         <th className="md:px-4 py-2">Index</th>

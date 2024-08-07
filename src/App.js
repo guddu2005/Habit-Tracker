@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
+    <Router className="bg-stone-600">
       <NavBar />
       <Switch>
         <Route exact path="/" component={AddHabit} />

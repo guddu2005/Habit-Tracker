@@ -5,8 +5,8 @@ import { faBell, faUser } from '@fortawesome/free-solid-svg-icons';
 
 export default function NavBar() {
   return (
-    <div className='w-full'>
-      <div className="bg-blue-300 flex justify-around md:text-xl text-sm p-3 md:h-14 md:w-full w-96  items-center">
+    <div className='w'>
+      <div className="bg-blue-600 h-20 flex justify-around md:text-xl text-sm p-3 md:h-24 md:w-full w-screen  items-center">
         <div className='md:mx-5   md:text-2xl w-1/4'>
           <Link to="/" className="text-white font-bold">Habit Tracker</Link>
         </div>
