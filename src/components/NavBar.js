@@ -27,7 +27,7 @@ export default function NavBar() {
         </div>
         <div className="flex space-x-6 md:space-x-10">
             <Link to="/" className={`text-white text-lg hover:text-gray-300 transition duration-300 ${isActive('/')}`}>
-                Add Habit
+                Habit
             </Link>
             <Link to="/Weekly" className={`text-white text-lg hover:text-gray-300 transition duration-300 ${isActive('/Weekly')}`}>
                 Weekly
