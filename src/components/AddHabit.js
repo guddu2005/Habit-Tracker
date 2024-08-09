@@ -194,7 +194,7 @@ export default function AddHabit() {
                 <form onSubmit={handleAdd} className='md:mx-20 mx-5 text-lg bg-white p-8 rounded-lg shadow-lg border border-gray-300'>
                     <p className='mt-3 mb-2 font-semibold text-gray-800'>Habit</p>
                     <input
-                        className='md:w-96 w-80 h-10 border border-gray-400 text-sm p-2 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-200'
+                        className='md:w-96 w-72 h-10 border border-gray-400 text-sm p-2 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-200'
                         placeholder='Enter Habit'
                         type="text"
                         value={habit}
@@ -203,7 +203,7 @@ export default function AddHabit() {
                     />
                     <p className='mt-4 mb-2 font-semibold text-gray-800'>Description</p>
                     <input
-                        className='md:w-96 w-80 h-10 border border-gray-400 text-sm p-2 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-200'
+                        className='md:w-96 w-72  h-10 border border-gray-400 text-sm p-2 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-200'
                         placeholder='Enter Description'
                         type="text"
                         value={desc}
